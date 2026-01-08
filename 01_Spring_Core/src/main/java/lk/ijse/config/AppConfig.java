@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan(basePackages = "lk.ijse.bean")
+@ComponentScan(basePackages = {"lk.ijse.bean","lk.ijse.NewBean"})
 
 
 public class AppConfig {
