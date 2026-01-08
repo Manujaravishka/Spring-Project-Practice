@@ -1,8 +1,9 @@
 package lk.ijse.bean;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-
+@Scope("prototype")
 @Component("ijseBean")// methana nama noda idiyoth testBean kiyala nomal wetenne eemath puluwan Appinitializer eka balanna(ijseBean)
 
 

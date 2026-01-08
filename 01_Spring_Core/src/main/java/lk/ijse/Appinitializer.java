@@ -1,6 +1,7 @@
 package lk.ijse;
 
 import lk.ijse.NewBean.NewTestBean;
+import lk.ijse.bean.MyConnection;
 import lk.ijse.bean.SpringBean;
 import lk.ijse.bean.TestBean;
 import lk.ijse.config.AppConfig;
@@ -32,11 +33,17 @@ public class Appinitializer {
         SpringBean springBean =(SpringBean) context.getBean("springBean");//NOT CAPITAL THIS ID NAME
         System.out.println("Bean : " + springBean);
         TestBean testBean = (TestBean) context.getBean("ijseBean");
-        System.out.println("TestBean : "+testBean);
+        System.out.println("Bean : "+testBean);
 
         testBean.printMessage();
         NewTestBean newTestBean =(NewTestBean) context.getBean("newTestBean");//NOT CAPITAL THIS ID NAME
         System.out.println("Bean : " + newTestBean);
+
+//        MyConnection myConnection =(MyConnection) context.getBean("myConnection");//NOT CAPITAL THIS ID NAME
+//        System.out.println("Bean : " + myConnection);
+        MyConnection myConnection=(MyConnection) context.getBean("cc");//NOT CAPITAL THIS ID NAME
+        System.out.println("Bean : " + myConnection);
+       // api kemathi id ekak dila tiyanne been eke warahan athule
 
         context.registerShutdownHook();
 
