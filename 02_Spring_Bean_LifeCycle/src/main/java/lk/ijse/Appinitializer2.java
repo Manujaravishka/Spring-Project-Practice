@@ -1,0 +1,20 @@
+package lk.ijse;
+
+import lk.ijse.bean.SpringBean;
+import lk.ijse.config.AppConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Appinitializer2 {
+    public static void main(String[] args) {
+
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.register(AppConfig.class);
+        context.refresh();
+
+        SpringBean springBean = context.getBean(SpringBean.class);
+
+        context.registerShutdownHook();
+
+
+    }
+}
