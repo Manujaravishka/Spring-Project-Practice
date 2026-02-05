@@ -1,0 +1,56 @@
+body{
+background:#020617;
+font-family:Arial;
+}
+
+.container{
+width:700px;
+margin:40px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.box{
+border:1px solid #ddd;
+padding:15px;
+margin-bottom:15px;
+border-radius:6px;
+}
+
+input{
+padding:7px;
+margin:5px;
+width:45%;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:6px;
+text-align:center;
+}
+
+button{
+padding:8px 15px;
+border:none;
+background:green;
+color:white;
+cursor:pointer;
+}
+
+.place{
+width:100%;
+background:#2563eb;
+margin-top:10px;
+}
