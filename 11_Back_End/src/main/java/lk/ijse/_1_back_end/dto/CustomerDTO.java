@@ -30,6 +30,9 @@ public class CustomerDTO {
         this.cAddress = cAddress;
     }
 
+    public CustomerDTO() {
+    }
+
     public CustomerDTO(String cId, String cName, String cAddress) {
         this.cId = cId;
         this.cName = cName;
